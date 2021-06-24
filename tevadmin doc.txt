@@ -1,0 +1,42 @@
+ - Azok listája, akik nem kérnek - kimásolomo excelből
+ - Beillesztem egy online felületre
+ - Generál egy jQery kódot
+ - Kimásolom
+ - Beillesztem a tevadmin consoljába
+
+
+
+Tevadmin osztályok
+
+div
+class="ui-datatable-tablewrapper"
+
+table role="grid"
+
+
+tr
+role="row"
+class="ui-widget-content ui-datatable-even"
+class="ui-widget-content ui-datatable-odd"
+
+
+td
+role="gridcell"
+
+span
+id="form1:igenybevetelekTabla:0:igenybevevo" (innerHtml [nev])
+
+
+td
+div
+a
+class="ui-commandlink ui-widget"	".ui-commandlink.ui-widget" - erre kell kattintani h pipa legyen vagy x
+
+
+
+button
+id="form1:btnMent"			$("button#form1\\:btnMent").click()
+
+button
+id="form1:letoltesxlsGomb"		$("button#form1\\:letoltesxlsGomb").click()
+
