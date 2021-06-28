@@ -1,8 +1,47 @@
+Bajkai Józsefné	
+Baka Sándorné	
+Bakos Gyula Tamásné	
+BALOGH LÁSZLÓNÉ	
+Bánfi József Jánosné	
+BASA ELEMÉRNÉ	
+Béresné Szöllős Beatrix	
+Czékli Ferencné	
+Dr. Szabó Emma Tünde	
+Farkas Andor Gyuláné	
+FAZEKAS ISTVÁNNÉ	
+FIDY LAJOS BÉLÁNÉ	
+Gaal Etelka Stefánia
+
+
+
  - Azok listája, akik nem kérnek - kimásolomo excelből
  - Beillesztem egy online felületre
  - Generál egy jQery kódot
  - Kimásolom
  - Beillesztem a tevadmin consoljába
+
+jQuery kód:
+
+definiálja a név tömböt
+definiálja a mentés gombot
+végigiterál a tr-eken
+ment
+
+
+beállítani
+
+
+A loop
+
+ - Kiválasztja az összes tr-t
+ - Végigpörög rajtuk
+ - Kiválasztja a neveket egyenként a tr megfelelő td-jéből
+ - Megnézi, hogy az aktuális név megegyezik-e a tömb valamelyik nevével
+ 	- ha igen, akkor kiválasztja az x-et a megfelelő td-ből és triggerel rajta egy click eventet
+	- ha nem, akkor megy tovább
+ - triggerel egy click eventet a mentés gombon
+
+
 
 
 
@@ -39,4 +78,8 @@ id="form1:btnMent"			$("button#form1\\:btnMent").click()
 
 button
 id="form1:letoltesxlsGomb"		$("button#form1\\:letoltesxlsGomb").click()
+
+
+form1:igenybevetelekTabla:7:igenybevevo
+
 

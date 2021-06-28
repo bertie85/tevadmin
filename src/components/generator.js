@@ -4,16 +4,33 @@ class Generator extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { code: "asdfdas" };
-
+    this.state = { code: " -- Itt fog megjelenni a kód --" };
   }
 
   handleChange = (e) => {
     const names = e.target.value.split(/\r?\n/);
-    const code = `[${names}].forEach((name) => {
-      $(".ui-widget-content.ui-datatable-even"). - here use the "name"
+
+    let namesStr = '[';
+
+    for (let name of names) {
+      namesStr += `"${name.trim().toLowerCase()}",`;
     }
-    )`;
+
+    namesStr += ']';
+
+    const code = `
+      const names = ${namesStr};
+
+      $("[id$=igenybevevo]").each((index, value) => {
+        for(let name of names){
+            if($(value).text().toLowerCase() === name){
+                const a = $(value).parent().next().children().children('a');
+                a.click();
+                console.log(name);
+            }
+          }
+      });
+    `;
 
     this.setState({ code })
   }
